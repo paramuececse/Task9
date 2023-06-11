@@ -1,0 +1,194 @@
+task 9:
+_________________
+
+t9q1:
+package Task9;
+import java.util.*;
+public class T9q1 {
+
+	public static void main(String[] args) {
+		    Scanner object=new Scanner(System.in);
+			String s=object.next();
+			char[] a=new char[s.length()];
+			char[]temp = new char[s.length()];;
+			for(int j=0;j<s.length();j++) {
+				a[j]=s.charAt(j);
+			}
+			
+			int k=0;
+	         for(int i=s.length()-1;i>=0;i--) {
+	        	 
+	        	 temp[k]=a[i];
+	        	 k++;
+	 
+	         }
+	         
+	         for(int m=0;m<s.length();m++) {
+	        	        	 if(a[m]==temp[m]) {
+	        		 System.out.println("palindrome");
+	        		 break;
+	        	 }
+	        	        	     	 
+	        	 else {
+	        		 System.out.println("not palindrome");
+	        		 break;
+	        	 }
+	        } 
+		}
+	}
+
+
+
+
+
+_________________________________________________________________
+t9q2:
+package Task9;
+
+import java.util.Scanner;
+
+public class T9q2 {
+
+		public static void main(String[] args) {
+			Scanner object=new Scanner(System.in);
+			String s=object.next();
+				char[] a=new char[s.length()];
+				for(int j=0;j<s.length();j++) {
+					a[j]=s.charAt(j);
+				}
+				
+		         for(int i=s.length()-1;i>=0;i--) {
+		        	 
+		        	 System.out.print(a[i]);
+		         }
+			}
+
+	}
+
+
+____________________________________________________________________________________
+t9q3:
+package Task9;
+import java.util.*;
+public class T9Q3 {
+
+	public static void main(String[] args) {
+	Scanner object=new Scanner(System.in);	
+     int a=object.nextInt();
+     int m=1;
+     for(int i=1;i<=a;i++) {
+    	 for(int j=1;j<=i;j++) {
+    		 System.out.print(m+" ");
+    		 m++;
+    	 }
+    	 System.out.println();
+     }
+	}
+
+}
+________________________________________________________________________________
+t9q4:
+package Task9;
+import java.util.*;
+public class T9Q4 {
+
+	
+	    public static void main(String[] args) {
+	        Scanner input = new Scanner(System.in);
+	        System.out.print("Enter the number of rows: ");
+	        int n = input.nextInt();
+
+	        // Print the pattern
+	        for (int i = 0; i < n; i++) {
+	            for (int j = 0; j < n; j++) {
+	                if (i == j || i == n - j - 1) {
+	                    System.out.print("*");
+	                } else {
+	                    System.out.print(" ");
+	                }
+	            }
+	            System.out.println();
+	        }
+	    }
+	}
+	
+
+____________________________________________________________________________
+t9q5:
+package Task9;
+import java.util.*;
+public class T9Q5 {
+
+	public static void main(String[] args) {
+		 Scanner object=new Scanner(System.in);
+		 int a=object.nextInt();
+		 if(a==100) {
+			 System.out.println("S");
+		 }
+		 else if(a>90 && a<99){
+			 System.out.println("A");
+		 }
+		 else if(a>80 && a<89) {
+			 System.out.println("B");
+		 }
+		 else if(a>70 && a<79) {
+			 System.out.println("C");
+		 }
+		 else if(a>60 && a<69) {
+			 System.out.println("D");
+		 }
+		 else if(a>50 && a<59) {
+			 System.out.println("E");
+		 }
+		 else  {
+			 System.out.println("F");
+		 }
+	}
+
+}
+_____________________________________________________________________________
+t9q6:
+package Task9;
+import java.util.*;
+public class T9Q6 {
+
+	public static void main(String[] args) {
+	Scanner object = new Scanner(System.in);
+    int m = object.nextInt();
+    double Rent = object.nextDouble();
+	int daysStayed = object.nextInt();
+	boolean isPeakSeason = (m >= 4 && m <= 6) || (m >= 11 && m <= 12);
+	
+double tariff = Rent * daysStayed;
+		        System.out.printf("%.2f", tariff);
+
+		        
+		    }
+		
+	}
+
+
+________________________________________________________________________________
+t9q7:
+package Task9;
+
+public class T9Q7 {
+
+	public static void main(String[] args) {
+		int a=45;
+		int b=32;
+		int c=66;
+		if(a>b && a>c) {
+			System.out.println("a is greater");
+		}
+		else if(b>a&& b>c) {
+			System.out.println("b is greater");
+		}
+		else {
+			System.out.println("c is greater");
+		}
+	}
+
+}
+____________________________________________________________________
+
